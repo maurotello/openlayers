@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Web Map</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="libs/ol.css">
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-1">
+			<div class="sidebar">
+				<h2>Base Layers</h2>
+				<input type="radio" name='baseRadioButton' value='openStreetMapStandard'> OSM Standard<br>
+				<input type="radio" name='baseRadioButton' value='openStreetMapHumanitarian' checked> OSM Humanitarian<br>
+			</div>
+		</div>
+		<div class="grid-2">
+			<div id="js-map" class="map"></div>
+		</div>
+	</div>
+
+	<div class="overlay-container">
+		<span class="overlay-text" id='feature-name'></span><br>
+		<span class="overlay-text" id='feature-additional-info'></span><br>
+	</div>
+	
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="libs/ol.js"></script>
+	<!--
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>-->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9mvEzGBerLvCZqZP86_4uGw5GG-9AGIY&callback=initMap" async defer></script>-->
+</body>
+</html>
